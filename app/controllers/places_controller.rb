@@ -28,7 +28,7 @@ before_action :authenticate_user!, :only=>[:new, :create, :edit, :update, :destr
 		@place=Place.find(params[:id])
 
 		if @place.user != current_user
-			return render :text=>'Not Allowerd', :status=>forbidden
+			return render :text=>'Not Allowed', :status=>forbidden
 		end
 	end
 

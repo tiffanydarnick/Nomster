@@ -9,7 +9,7 @@ class CreatePhotos < ActiveRecord::Migration
       	t.timestamps
     end
 
-    	add_index :caption, [:user_id, :place_id]
-    	add_index :caption, :place_id
+    	add_index :photos, [:user_id, :place_id]
+    	add_index :photos, :place_id
   end
 end
