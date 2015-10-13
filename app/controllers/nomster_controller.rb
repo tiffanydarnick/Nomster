@@ -1,0 +1,2 @@
+class NomsterController < ApplicationController
+end
